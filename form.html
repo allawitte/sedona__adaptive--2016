@@ -1,10 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
+  <meta charset="utf-8">
+  <title>Седона - Форма отзыва</title>
 </head>
 <body>
-$END$
+<header class="page-header">
+  <nav class="navigation">
+    <ul class="navigation__list">
+      <li class="navigation__item"><a href="index.html" class="navigation__link">Главная</a></li>
+      <li class="navigation__item"><a href="photo.html" class="navigation__link">Фото и видео</a></li>
+      <li class="navigation__item"><a class="navigation__link">Форма отзыва</a></li>
+      <li class="navigation__item"><a href="https://htmlacademy.ru/" class="navigation__link">Html Academy</a></li>
+    </ul>
+    <button class="navigation__toggle" type="button">Открыть/закрыть меню</button>
+  </nav>
+  <div class="intro">
+    <img class="intro__text" src="http://placehold.it/282x214" width="282" height="214" alt="Welcome to the gorgeus Sedona">
+  </div>
+</header>
+<main class="page-content">
+  <h1 class="page-content__title">Оставьте свой отзыв</h1>
+  <p class="page-content__text">Помогите нашим отелям стать лучше! Оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
+  <div class="review">
+    <form action="#" method="post">
+      <div class="review__section">
+        <h2 class="review__subtitle">Представьтесь, пожалуйста:</h2>
+        <label class="review__name-label">Имя:<input class="review__name" type="text" placeholder="Петр"></label>
+        <label class="review__name-label">Фамилия:<input class="review__name" type="text" placeholder="Иванов"></label>
+        <label class="review__name-label">Отчество:<input class="review__name" type="text" placeholder="Александрович"></label>
+      </div>
+      <div class="review__section">
+        <h2 class="review__subtitle">Контактная информация:</h2>
+        <div class="review__contact-container">
+          <label class="review__contact-label" for="phone-number">Контактный телефон:</label>
+          <input class="review__contact  review__contact--phone" id="phone-number" type="tel" placeholder="Введите телефон">
+          <p class="review__error-message">Ошибка, перепроверьте номер</p>
+        </div>
+        <div class="review__contact-container">
+          <label class="review__contact-label" for="email">Контактный телефон:</label>
+          <input class="review__contact  review__contact--email" id="email" type="email" placeholder="Введите e-mail">
+          <p class="review__error-message">Ошибка, перепроверьте e-mail</p>
+        </div>
+      </div>
+      <div class="review__section">
+        <h2 class="review__subtitle">Ваше общее впечатление:</h2>
+        <label class="review__label  review__label--radio" for="positive">Скорее положительное</label>
+        <input class="review__input" id="positive" type="radio" name="impression" checked>
+        <label class="review__label  review__label--radio" for="negative">Скорее отрицательное</label>
+        <input class="review__input" id="negative" type="radio" name="impression">
+        <label class="review__label  review__label--radio" for="hard-to-answer">Затрудняюсь ответить</label>
+        <input class="review__input" id="hard-to-answer" type="radio" name="impression">
+      </div>
+      <div class="review__section">
+        <h2 class="review__subtitle">Посещенные достопримечательности:</h2>
+        <label class="review__label  review__label--checkbox" for="devils-bridge">Мост Дьявола</label>
+        <input class="review__input" id="devils-bridge" type="checkbox" name="devils-bridge" checked>
+        <label class="review__label  review__label--checkbox" for="slide-park">Слайд-парк</label>
+        <input class="review__input" id="slide-park" type="checkbox" name="slide-park" checked>
+        <label class="review__label  review__label--checkbox" for="mountain-bell">Гора-Колокол</label>
+        <input class="review__input" id="mountain-bell" type="checkbox" name="mountain-bell">
+        <label class="review__label  review__label--checkbox" for="red-rocks">Красные скалы</label>
+        <input class="review__input" id="red-rocks" type="checkbox" name="red-rocks" checked>
+      </div>
+      <div class="review__section">
+        <h2 class="review__subtitle">Опишите свои эмоции:</h2>
+        <textarea class="review__textarea" id="emotions" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+      </div>
+      <button class="button" type="submit">Отправить отзыв</button>
+    </form>
+  </div>
+</main>
+<footer class="page-footer">
+  <div class="page-footer__hashtag">#visitsedona</div>
+  <ul class="social">
+    <li class="social__item"><a class="social__link  social__link--twitter" href="#">Twitter</a></li>
+    <li class="social__item"><a class="social__link  social__link--facebook" href="#">Facebook</a></li>
+    <li class="social__item"><a class="social__link  social__link--youtube" href="#">Youtube</a></li>
+  </ul>
+  <p class="page-footer__copyright">
+    Разработано
+    <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
+  </p>
+</footer>
 </body>
 </html>
