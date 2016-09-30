@@ -2,7 +2,9 @@
   position: relative;
   padding-top: 52px;
   padding-bottom: 67px;
+  line-height: 0;
   background: $bg-blue-color url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
+  text-align: center;
 
   &::after {
     position: absolute;

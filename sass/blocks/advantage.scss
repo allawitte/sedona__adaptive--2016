@@ -1,0 +1,58 @@
+.advantage {
+
+  &--blue {
+    background-color: $bg-blue-color;
+  }
+
+  &--blue .advantage__title,
+  &--blue .advantage__text {
+    color: $text-light-color;
+  }
+
+  &--gray {
+    background-color: $bg-gray-color;
+  }
+
+  &--housing,
+  &--souvenirs,
+  &--food {
+    position: relative;
+    padding-left: 50px;
+    text-align: left;
+  }
+
+  &--housing {
+    background: url("../img/icon-house.svg") no-repeat 1px 0;
+    background-size: 39px 37px;
+  }
+
+  &--souvenirs {
+    background: url("../img/icon-gift.svg") no-repeat 5px 0;
+    background-size: 32px 38px;
+  }
+
+  &--food {
+    background: url("../img/icon-burger.svg") no-repeat 0 0;
+    background-size: 40px 35px;
+  }
+}
+
+.advantage__content {
+
+}
+
+.advantage__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $text-dark-color;
+  text-transform: uppercase;
+}
+
+.advantage__text {
+  text-transform: uppercase;
+}
+
+.advantage__photo-container {
+  line-height: 0;
+}
