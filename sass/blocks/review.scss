@@ -13,14 +13,11 @@
   line-height: 26px;
   font-weight: 700;
   border: none;
-
-  &::placeholder {
-    color: $text-dark-color;
-  }
 }
 
 .review input[type="tel"],
 .review input[type="email"] {
+  display: block;
   padding-right: 70px;
 }
 
@@ -39,6 +36,7 @@
 }
 
 .review__label {
+  display: block;
   line-height: 26px;
   text-transform: uppercase;
 
@@ -78,6 +76,7 @@
 .review__error-message {
   line-height: 26px;
   color: $text-error-color;
+  text-transform: none;
 }
 
 .review input[type="radio"],
@@ -94,8 +93,4 @@
   font-weight: 700;
   color: $text-dark-color;
   background-color: #f2f2f2;
-}
-
-.review__textarea::placeholder {
-  color: $text-dark-color;
 }

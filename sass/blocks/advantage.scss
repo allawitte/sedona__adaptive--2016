@@ -4,7 +4,7 @@
     background-color: $bg-blue-color;
   }
 
-  &--blue .advantage__title,
+  &--blue .title, /* Как лучше вынести это отсюда? */
   &--blue .advantage__text {
     color: $text-light-color;
   }
@@ -39,14 +39,6 @@
 
 .advantage__content {
 
-}
-
-.advantage__title {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $text-dark-color;
-  text-transform: uppercase;
 }
 
 .advantage__text {
