@@ -1,0 +1,45 @@
+.photo {
+  margin: 0;
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+   border-bottom: 1px solid #e5e5e5;
+  }
+}
+
+.photo__image {
+
+}
+
+.photo__name {
+  color: $text-dark-color;
+  line-height: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.photo__author {
+  line-height: 24px;
+}
+
+.photo__rating {
+  position: relative;
+  display: inline-block;
+  width: 70px;
+  padding-left: 25px;
+  font-weight: 700;
+  color: $text-dark-color;
+  text-decoration: none;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    width: 22px;
+    height: 22px;
+    background: $bg-light-color url("../img/icon-like.svg") no-repeat 0 0;
+  }
+}

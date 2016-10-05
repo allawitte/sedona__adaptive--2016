@@ -1,0 +1,26 @@
+.page-footer {
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $text-dark-color;
+  text-transform: uppercase;
+}
+
+.page-footer__copyright {
+  line-height: 26px;
+  color: $text-dark-color;
+  text-transform: uppercase;
+}
+
+.page-footer__copyright-link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 27px;
+  height: 34px;
+  font-size: 0;
+  background: $text-light-color url("../img/logo-htmlacademy.svg") no-repeat 50% 50%;
+}

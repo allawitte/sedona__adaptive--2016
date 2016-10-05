@@ -1,0 +1,20 @@
+@import "vendors/normalize.scss";
+
+@import "variables.scss";
+@import "mixins.scss";
+
+@import "global/fonts.scss";
+@import "global/common.scss";
+
+@import "blocks/advantage.scss";
+@import "blocks/button.scss";
+@import "blocks/intro.scss";
+@import "blocks/map.scss";
+@import "blocks/navigation.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/photo.scss";
+@import "blocks/review.scss";
+@import "blocks/search-request.scss";
+@import "blocks/social.scss";
+@import "blocks/videoplayer.scss";
