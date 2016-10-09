@@ -19,7 +19,8 @@
 }
 
 .title {
-  @include container;
+  margin-top: 0;
+  padding-top: 35px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -28,7 +29,6 @@
 }
 
 .text {
-  @include container;
   line-height: 26px;
   text-transform: uppercase;
 }

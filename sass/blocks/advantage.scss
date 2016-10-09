@@ -1,14 +1,5 @@
 .advantage {
 
-  &--blue {
-    background-color: $bg-blue-color;
-  }
-
-  &--blue .title, /* Как лучше вынести это отсюда? */
-  &--blue .advantage__text {
-    color: $text-light-color;
-  }
-
   &--gray {
     @include container;
     background-color: $bg-gray-color;
@@ -41,6 +32,12 @@
 
 .advantage__content {
   @include container;
+  background-color: $bg-blue-color;
+  color: $text-light-color;
+}
+
+.advantage__content .title {
+  color: $text-light-color;
 }
 
 .advantage__text {
@@ -48,8 +45,9 @@
   text-transform: uppercase;
 }
 
-.advantage__photo-container {
-  line-height: 0;
+.advantage__photo {
+  width: 100%;
+  height: auto;
 }
 
 @media (min-width: 768px) {
@@ -57,7 +55,7 @@
 
     &--blue {
       display: flex;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
     }
 
     &--housing,
@@ -97,10 +95,10 @@
     flex-basis: 33%;
   }
 
-  .advantage__photo-container {
+  .advantage__photo {
     flex-basis: 67%;
 
-    &--to-left {
+    &--left {
       order: -1;
     }
   }
