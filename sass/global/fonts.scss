@@ -14,7 +14,12 @@
   font-style: normal;
 }
 
+.advantages {
+  font-size: 0;
+}
+
 .title {
+  @include container;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -23,6 +28,7 @@
 }
 
 .text {
-  line-height: 24px;
+  @include container;
+  line-height: 26px;
   text-transform: uppercase;
 }

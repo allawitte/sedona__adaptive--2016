@@ -10,41 +10,98 @@
   }
 
   &--gray {
+    @include container;
     background-color: $bg-gray-color;
   }
 
   &--housing,
   &--souvenirs,
   &--food {
+    @include container;
     position: relative;
-    padding-left: 50px;
+    padding-left: 70px;
     text-align: left;
   }
 
   &--housing {
-    background: url("../img/icon-house.svg") no-repeat 1px 0;
+    background: url("../img/icon-house.svg") no-repeat 21px 0;
     background-size: 39px 37px;
   }
 
   &--souvenirs {
-    background: url("../img/icon-gift.svg") no-repeat 5px 0;
+    background: url("../img/icon-gift.svg") no-repeat 25px 0;
     background-size: 32px 38px;
   }
 
   &--food {
-    background: url("../img/icon-burger.svg") no-repeat 0 0;
+    background: url("../img/icon-burger.svg") no-repeat 20px 0;
     background-size: 40px 35px;
   }
 }
 
 .advantage__content {
-
+  @include container;
 }
 
 .advantage__text {
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 .advantage__photo-container {
   line-height: 0;
+}
+
+@media (min-width: 768px) {
+  .advantage {
+
+    &--blue {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &--housing,
+    &--food,
+    &--souvenirs {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+      padding-left: 0;
+      padding-top: 160px;
+      text-align: center;
+    }
+
+    &--housing {
+      background-size: 75px 72px;
+      background-position: 50% 88px;
+    }
+
+    &--food {
+      background-size: 77px 68px;
+      background-position: 50% 92px;
+    }
+
+    &--souvenirs {
+      background-size: 64px 75px;
+      background-position: 50% 85px;
+    }
+
+    &--gray {
+      display: inline-block;
+      vertical-align: top;
+      width: 33%;
+    }
+  }
+
+  .advantage__content {
+    flex-basis: 33%;
+  }
+
+  .advantage__photo-container {
+    flex-basis: 67%;
+
+    &--to-left {
+      order: -1;
+    }
+  }
 }
