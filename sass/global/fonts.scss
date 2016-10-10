@@ -19,8 +19,9 @@
 }
 
 .title {
-  margin-top: 0;
+  margin: 0;
   padding-top: 18px;
+  padding-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -29,7 +30,10 @@
 }
 
 .text {
-  line-height: 26px;
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 27px;
+  line-height: 24px;
   text-transform: uppercase;
 }
 
