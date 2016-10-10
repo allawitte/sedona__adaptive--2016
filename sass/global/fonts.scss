@@ -14,7 +14,8 @@
   font-style: normal;
 }
 
-.advantages {
+.advantages,
+.photos {
   font-size: 0;
 }
 
@@ -31,4 +32,10 @@
 .text {
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-min-width) {
+  .photos {
+    text-align: left;
+  }
 }

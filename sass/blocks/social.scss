@@ -29,3 +29,9 @@
     background: $bg-blue-color url("../img/icon-youtube.svg") no-repeat 50% 50%;
   }
 }
+
+@media (min-width: $tablet-min-width) {
+  .social {
+    width: 33.33333%;
+  }
+}

@@ -25,3 +25,25 @@
   font-size: 0;
   background: $text-light-color url("../img/logo-htmlacademy.svg") no-repeat 50% 50%;
 }
+
+@media (min-width: $tablet-min-width) {
+  .page-footer {
+    display: flex;
+  }
+
+  .page-footer__hashtag {
+    text-align: left;
+    width: 33.33333%;
+  }
+
+  .page-footer__copyright {
+    text-align: right;
+    width: 33.33333%;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .page-footer__hashtag {
+    text-align: center;
+  }
+}

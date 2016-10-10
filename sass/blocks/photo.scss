@@ -1,4 +1,5 @@
 .photo {
+  @include container;
   margin: 0;
   border-top: 1px solid #e5e5e5;
 
@@ -17,12 +18,14 @@
 
 .photo__name {
   color: $text-dark-color;
+  font-size: $base-font-size;
   line-height: 24px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .photo__author {
+  font-size: $base-font-size;
   line-height: 24px;
 }
 
@@ -31,6 +34,7 @@
   display: inline-block;
   width: 70px;
   padding-left: 25px;
+  font-size: $base-font-size;
   font-weight: 700;
   color: $text-dark-color;
   text-decoration: none;
@@ -44,6 +48,68 @@
     vertical-align: top;
     width: 22px;
     height: 22px;
-    background: $bg-light-color url("../img/icon-like.svg") no-repeat 0 0;
+    background: url("../img/icon-like.svg") no-repeat 0 0;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .photo {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    border: none;
+
+    &:first-child {
+      width: 100%;
+    }
+
+    &:nth-child(n+2) {
+      width: 50%;
+      border: none;
+    }
+  }
+
+  .photo__description {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $bg-dark-gray-color;
+  }
+
+  .photo__name,
+  .photo__author {
+    width: calc(100% - 100px);
+  }
+
+  .photo__author {
+    order: 2;
+  }
+
+  .photo__rating {
+    width: 100px;
+    order: 1;
+  }
+
+  .photo:nth-child(2n+3) .photo__description {
+    background-color: #eaeaea;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .photo {
+
+    &:nth-child(n+2) {
+      width: 33.33333%;
+    }
+  }
+
+  .photo__description,
+  .photo:nth-child(2n+3) .photo__description {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+
+  .photo__name,
+  .photo__author,
+  .photo__rating {
+    color: $text-light-color;
   }
 }

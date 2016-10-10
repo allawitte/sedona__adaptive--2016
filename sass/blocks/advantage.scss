@@ -50,21 +50,18 @@
   height: auto;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-min-width) {
   .advantage {
-
-    &--blue {
-      display: flex;
-      flex-wrap: nowrap;
-    }
+    display: flex;
+    flex-direction: row;
 
     &--housing,
     &--food,
     &--souvenirs {
       display: inline-block;
       vertical-align: top;
-      width: 33%;
-      padding-left: 0;
+      width: 33.33333%;
+      padding-left: 6.25%;
       padding-top: 160px;
       text-align: center;
     }
@@ -87,16 +84,16 @@
     &--gray {
       display: inline-block;
       vertical-align: top;
-      width: 33%;
+      width: 33.33333%;
     }
   }
 
   .advantage__content {
-    flex-basis: 33%;
+    width: 33%;
   }
 
   .advantage__photo {
-    flex-basis: 67%;
+    width: 67%;
 
     &--left {
       order: -1;
