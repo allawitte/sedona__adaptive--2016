@@ -14,7 +14,14 @@
   font-style: normal;
 }
 
+.advantages {
+  font-size: 0;
+}
+
 .title {
+  margin: 0;
+  padding-top: 18px;
+  padding-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
@@ -23,6 +30,17 @@
 }
 
 .text {
+  margin: 0;
+  padding-top: 6px;
+  padding-bottom: 27px;
   line-height: 24px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-min-width) {
+  .photos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+  }
 }

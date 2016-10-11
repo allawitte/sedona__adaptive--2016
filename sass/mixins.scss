@@ -5,3 +5,19 @@
     clear: both;
   }
 }
+
+@mixin container {
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+}
+
+@mixin button {
+  padding: 16px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $text-light-color;
+  background-color: $bg-blue-color;
+  cursor: pointer;
+}

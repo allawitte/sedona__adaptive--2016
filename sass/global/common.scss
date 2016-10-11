@@ -11,12 +11,16 @@ body {
   background-color: $bg-light-color;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: $base-font-size;
-  line-height: $base-line-height;
   font-weight: 400;
   font-style: normal;
   color: $text-base-color;
 }
 
 main {
+  padding-top: 20px;
   text-align: center;
+}
+
+p {
+  line-height: $base-line-height;
 }
