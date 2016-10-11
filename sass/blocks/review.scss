@@ -10,13 +10,24 @@
 .review input[type="text"],
 .review input[type="tel"],
 .review input[type="email"] {
-  padding: 20px;
+  padding: 13px 22px;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
   font-weight: 700;
-  border: none;
+  border: 4px solid #f2f2f2;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+
+  &:focus {
+    background-color: $bg-light-color;
+    border-color: #e5e5e5;
+    outline: none;
+  }
 }
 
 .review input[type="tel"],
@@ -31,7 +42,7 @@
 
   &::after {
     position: absolute;
-    top: 0;
+    top: 26px;
     right: 0;
     content: "";
     width: 58px;
@@ -94,6 +105,7 @@
   width: 100%;
   border: none;
   resize: none;
+  padding: 17px 20px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
@@ -109,6 +121,7 @@
   }
 
   .review__section {
+    border: none;
 
     &:nth-child(1) {
       width: 50%;

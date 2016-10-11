@@ -1,5 +1,6 @@
 .social {
   padding-left: 0;
+  padding-bottom: 34px;
   font-size: 0;
   list-style: none;
 }
@@ -33,5 +34,6 @@
 @media (min-width: $tablet-min-width) {
   .social {
     width: 33.33333%;
+    padding-bottom: 8px;
   }
 }

@@ -14,10 +14,6 @@
   font-style: normal;
 }
 
-.advantages {
-  font-size: 0;
-}
-
 .title {
   margin: 0;
   padding-top: 18px;
@@ -37,8 +33,13 @@
   text-transform: uppercase;
 }
 
+.advantages {
+  font-size: 0;
+}
+
 @media (min-width: $tablet-min-width) {
   .photos {
+    @include container;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
