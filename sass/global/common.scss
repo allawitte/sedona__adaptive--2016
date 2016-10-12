@@ -6,22 +6,34 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   min-width: 320px;
-  background-color: $bg-light-color;
+  max-width: 1200px;
+  margin: 0 auto;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: $base-font-size;
   font-weight: 400;
   font-style: normal;
   color: $text-base-color;
+  background-color: $bg-dark-gray-color;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 main {
   padding-top: 20px;
+  padding-bottom: 1px;
   text-align: center;
+  background-color: $bg-light-color;
 }
 
 p {
   line-height: $base-line-height;
+}
+
+button,
+input {
+
+  &:active {
+    outline: none;
+  }
 }

@@ -39,14 +39,14 @@
       <div class="review__section">
         <h2 class="title">Контактная информация:</h2>
         <div class="review__contact-container  review__contact-container--phone">
-          <label class="review__label" for="phone-number">Контактный телефон:</label>
-          <input id="phone-number" type="tel" placeholder="Введите телефон">
+          <label class="review__label" for="phone-number"><spam class="review__word-hidden">Контактный</spam> телефон:</label>
+          <input id="phone-number" type="tel" placeholder="Введите телефон" required>
           <p class="review__error-message">Ошибка, перепроверьте номер</p>
         </div>
         <div class="review__contact-container  review__contact-container--email">
           <label class="review__label" for="email">Электронная почта:</label>
-          <input id="email" type="email" placeholder="Введите e-mail">
-          <p class="review__error-message">Ошибка, перепроверьте e-mail</p>
+          <input id="email" type="email" placeholder="Введите e-mail" required>
+          <p class="review__error-message  review__error-message--show">Ошибка, перепроверьте e-mail</p>
         </div>
       </div>
       <div class="review__section">
@@ -60,14 +60,16 @@
       </div>
       <div class="review__section">
         <h2 class="title">Посещенные достопримечательности:</h2>
-        <input id="devils-bridge" type="checkbox" name="devils-bridge" checked>
-        <label class="review__label  review__label--checkbox" for="devils-bridge">Мост Дьявола</label>
-        <input id="slide-park" type="checkbox" name="slide-park" checked>
-        <label class="review__label  review__label--checkbox" for="slide-park">Слайд-парк</label>
-        <input id="mountain-bell" type="checkbox" name="mountain-bell">
-        <label class="review__label  review__label--checkbox" for="mountain-bell">Гора-Колокол</label>
-        <input id="red-rocks" type="checkbox" name="red-rocks" checked>
-        <label class="review__label  review__label--checkbox" for="red-rocks">Красные скалы</label>
+        <div class="review__checkboxes-wrapper">
+          <input id="devils-bridge" type="checkbox" name="devils-bridge" checked>
+          <label class="review__label  review__label--checkbox" for="devils-bridge">Мост Дьявола</label>
+          <input id="slide-park" type="checkbox" name="slide-park" checked>
+          <label class="review__label  review__label--checkbox" for="slide-park">Слайд-парк</label>
+          <input id="mountain-bell" type="checkbox" name="mountain-bell" checked>
+          <label class="review__label  review__label--checkbox" for="mountain-bell">Гора-Колокол</label>
+          <input id="red-rocks" type="checkbox" name="red-rocks">
+          <label class="review__label  review__label--checkbox" for="red-rocks">Красные скалы</label>
+        </div>
       </div>
       <div class="review__section">
         <h2 class="title">Опишите свои эмоции:</h2>
