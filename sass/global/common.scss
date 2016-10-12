@@ -33,7 +33,16 @@ p {
 button,
 input {
 
+  &:focus {
+    outline: none;
+  }
+
   &:active {
     outline: none;
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

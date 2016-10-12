@@ -31,12 +31,14 @@
   position: relative;
   margin-top: -1px;
   min-height: 56px;
+  box-shadow: 0 -1px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .navigation__logo a {
   position: absolute;
   top: 0;
   margin-left: -51px;
+  width: 102px;
   font-size: 0;
   z-index: 1;
 }
@@ -103,10 +105,19 @@
   .navigation__logo {
     flex-basis: 20%;
     margin-left: 0;
+    box-shadow: none;
     order: 1;
   }
 
   .navigation__toggle {
     display: none;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .navigation__logo a {
+    margin-left: -94px;
+    width: 188px;
+    height: 96px;
   }
 }
