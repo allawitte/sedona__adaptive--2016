@@ -1,5 +1,6 @@
 .videoplayer {
   line-height: 0;
+  margin-bottom: 37px;
 }
 
 .videoplayer__video {
@@ -7,11 +8,22 @@
 }
 
 .videoplayer__controls {
-
+  margin-left: 6.25%;
+  margin-right: 6.25%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 23px 25px;
+  background-color: #f2f2f2;
 }
 
 .videoplayer__scrollbar {
-  position: relative;
+  position: absolute;
+  top: -45px;
+  left: 0;
+  width: 100%;
   height: 45px;
   border: 22px solid rgba(0, 0, 0, 0.6);
   border-bottom: 20px solid rgba(0, 0, 0, 0.6);
@@ -26,11 +38,6 @@
   height: 9px;
   background-color: $bg-light-color;
   border-radius: 50%;
-}
-
-.videoplayer__buttons {
-  padding: 23px;
-  background-color: #f2f2f2;
 }
 
 .videoplayer__repeat-button,
@@ -48,6 +55,8 @@
 }
 
 .videoplayer__subtitles-button {
+  margin-left: auto;
+  margin-right: 31px;
   width: 32px;
   background: url("../img/icon-video-subtitles.svg") no-repeat 50% 50%;
 }
@@ -55,4 +64,52 @@
 .videoplayer__fullscreen-button {
   width: 20px;
   background: url("../img/icon-video-fullscreen.svg") no-repeat 50% 50%;
+}
+
+@media (min-width: $tablet-min-width) {
+  .videoplayer {
+    @include container;
+    position: relative;
+    margin-bottom: 40px;
+  }
+
+  .videoplayer__controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-left: 7.8125%; /* 60/768 = 7.8125% */
+    margin-right: 7.8125%; /* 60/768 = 7.8125% */
+    padding: 0 35px;
+    width: 84.375%; /* 100% -7.8125%*2 = 84.375% */
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .videoplayer__scrollbar {
+    position: relative;
+    top: 0;
+    height: 3px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+  }
+
+  .videoplayer__repeat-button {
+    margin-right: 42px;
+    order: -1;
+  }
+
+  .videoplayer__subtitles-button {
+    margin-left: 42px;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .videoplayer {
+    width: 800px;
+    padding: 0;
+    margin: 0 auto;
+    margin-bottom: 84px;
+  }
 }

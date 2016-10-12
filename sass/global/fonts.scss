@@ -14,10 +14,6 @@
   font-style: normal;
 }
 
-.advantages {
-  font-size: 0;
-}
-
 .title {
   margin: 0;
   padding-top: 18px;
@@ -33,14 +29,57 @@
   margin: 0;
   padding-top: 6px;
   padding-bottom: 27px;
+  font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+
+  &--required {
+    text-align: right;
+    display: none;
+  }
+
+  &--bg-triangle {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -37px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 37px;
+      background: url("../img/bg-triangle.svg") no-repeat 50% 100%;
+      background-size: cover;
+    }
+  }
+}
+
+.advantages {
+  font-size: 0;
 }
 
 @media (min-width: $tablet-min-width) {
   .photos {
+    @include container;
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+  }
+
+  .text {
+
+    &--required {
+      display: inline-block;
+      width: 50%;
+      padding-top: 19px;
+      padding-bottom: 14px;
+    }
+
+    &--bg-triangle {
+
+      &::after {
+        display: none;
+      }
+    }
   }
 }

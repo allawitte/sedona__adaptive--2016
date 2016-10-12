@@ -1,5 +1,6 @@
 .search-request {
   @include container;
+  margin-bottom: 49px;
 }
 
 .search-request__title {
@@ -10,3 +11,18 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-min-width) {
+  .search-request {
+    width: 458px;
+    margin: 0 auto;
+    margin-bottom: 58px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .search-request {
+    margin-bottom: 66px;
+  }
+}

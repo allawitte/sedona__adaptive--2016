@@ -1,12 +1,17 @@
 .intro {
-  position: relative;
-  padding-top: 90px;
-  padding-bottom: 85px;
   @include container;
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 68px;
   line-height: 0;
   background: $bg-blue-color url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: cover;
   text-align: center;
+
+  &--index {
+    padding-top: 90px;
+    padding-bottom: 85px;
+  }
 
   &::after {
     position: absolute;
@@ -17,5 +22,24 @@
     height: 57px;
     background: url("../img/bg-intro-triangle-mobile.svg") no-repeat 50% 100%;
     background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-min-width) {
+  .intro {
+    padding-top: 97px;
+    padding-bottom: 119px;
+
+    &--index {
+      padding-top: 78px;
+      padding-bottom: 90px;
+    }
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .intro {
+    padding-top: 104px;
+    padding-bottom: 122px;
   }
 }

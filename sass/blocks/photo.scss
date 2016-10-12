@@ -1,6 +1,8 @@
 .photo {
   @include container;
   margin: 0;
+  padding-top: 22px;
+  font-size: 0;
   border-top: 1px solid #e5e5e5;
 
   &:last-child {
@@ -12,11 +14,14 @@
 
 }
 
-.photo__description {
+.photo__description-wrapper {
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: left;
 }
 
 .photo__name {
+  margin: 0;
   color: $text-dark-color;
   font-size: $base-font-size;
   line-height: 24px;
@@ -25,14 +30,19 @@
 }
 
 .photo__author {
+  margin: 0;
   font-size: $base-font-size;
   line-height: 24px;
 }
 
 .photo__rating {
+  display: inline-block;
+  vertical-align: top;
   position: relative;
   width: 70px;
-  padding-left: 25px;
+  padding-left: 37px;
+  padding-top: 10px;
+  padding-bottom: 4px;
   font-size: $base-font-size;
   font-weight: 700;
   color: $text-dark-color;
@@ -40,7 +50,7 @@
 
   &::before {
     position: absolute;
-    top: 0;
+    top: 6px;
     left: 0;
     content: "";
     display: inline-block;
@@ -53,7 +63,9 @@
 
 @media (min-width: $tablet-min-width) {
   .photo {
-    padding: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
     border: none;
 
     &:first-child {
@@ -66,14 +78,16 @@
     }
   }
 
-  .photo__description {
+  .photo__description-wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: $bg-dark-gray-color;
   }
 
-  .photo__name,
-  .photo__author {
+  .photo__description {
     width: calc(100% - 100px);
   }
 
@@ -82,25 +96,40 @@
   }
 
   .photo__rating {
-    width: 100px;
+    align-self: center;
+    padding-top: 2px;
+    padding-left: 32px;
+    width: 63px;
     order: 1;
+
+    &::before {
+      top: 0;
+    }
   }
 
-  .photo:nth-child(2n+3) .photo__description {
+  .photo:nth-child(2n+3) .photo__description-wrapper {
     background-color: #eaeaea;
   }
 }
 
 @media (min-width: $desktop-min-width) {
   .photo {
+    position: relative;
 
     &:nth-child(n+2) {
       width: 33.33333%;
     }
   }
 
-  .photo__description,
-  .photo:nth-child(2n+3) .photo__description {
+  .photo__description-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+
+  .photo__description-wrapper,
+  .photo:nth-child(2n+3) .photo__description-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
   }
 

@@ -1,9 +1,13 @@
 .page-footer {
   @include container;
+  padding-top: 36px;
+  padding-bottom: 23px;
   text-align: center;
+  background-color: $bg-light-color;
 }
 
 .page-footer__hashtag {
+  padding-bottom: 37px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -12,6 +16,7 @@
 }
 
 .page-footer__copyright {
+  margin: 0;
   line-height: 26px;
   color: $text-dark-color;
   text-transform: uppercase;
@@ -20,6 +25,7 @@
 .page-footer__copyright-link {
   display: inline-block;
   vertical-align: middle;
+  margin-left: 7px;
   width: 27px;
   height: 34px;
   font-size: 0;
@@ -32,11 +38,17 @@
   }
 
   .page-footer__hashtag {
+    padding-top: 10px;
+    padding-left: 12px;
+    padding-bottom: 10px;
     text-align: left;
     width: 33.33333%;
   }
 
   .page-footer__copyright {
+    padding-top: 8px;
+    padding-bottom: 10px;
+    padding-right: 15px;
     text-align: right;
     width: 33.33333%;
   }

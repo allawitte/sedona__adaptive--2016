@@ -21,56 +21,62 @@
     </ul>
     <button class="navigation__toggle" type="button">Открыть/закрыть меню</button>
   </nav>
-  <div class="intro">
+  <div class="intro  intro--index">
     <img class="intro__text" src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome to the gorgeus Sedona">
   </div>
 </header>
 <main>
   <h1 class="title">Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
-  <p class="text">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем гранд каньон!</p>
+  <p class="text  text--bg-triangle">Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче чем гранд каньон!</p>
   <section class="advantages">
     <div class="advantage">
       <div class="advantage__content">
         <h2 class="title">Настоящий городок</h2>
-        <span class="advantage__text">&mdash;&nbsp;&#8470;&nbsp;1&nbsp;&mdash;</span>
-        <p class="advantage__text">Седона не&nbsp;атракцион для туристов, там течет своя жизнь</p>
+        <span class="text">&mdash;&nbsp;&#8470;&nbsp;1&nbsp;&mdash;</span>
+        <p class="text">Седона не&nbsp;атракцион для туристов, там течет своя жизнь</p>
       </div>
-      <img class="advantage__photo" src="img/photo-city@1x.jpg" width="320" height="260" alt="Фото города">
+      <picture class="advantage__photo-container">
+        <img class="advantage__photo" src="img/photo-city@1x.jpg" width="320" height="260" alt="Фото города">
+      </picture>
     </div>
     <div class="advantage  advantage--housing">
       <h2 class="title">Жилье</h2>
-      <p class="advantage__text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
+      <p class="text">Рекомендуем пожить в&nbsp;настоящем мотеле, все как в&nbsp;кино!</p>
     </div>
     <div class="advantage  advantage--souvenirs">
       <h2 class="title">Сувениры</h2>
-      <p class="advantage__text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
+      <p class="text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местного производства!</p>
     </div>
     <div class="advantage  advantage--food">
       <h2 class="title">Еда</h2>
-      <p class="advantage__text">Всегда заказывай фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
+      <p class="text">Всегда заказывай фирменный бургер, вы&nbsp;не&nbsp;разочаруетесь!</p>
     </div>
     <div class="advantage">
       <div class="advantage__content">
         <h2 class="title">Там есть мост дьявола</h2>
-        <span class="advantage__text">&mdash;&nbsp;&#8470;&nbsp;2&nbsp;&mdash;</span>
-        <p class="advantage__text">Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
+        <span class="text">&mdash;&nbsp;&#8470;&nbsp;2&nbsp;&mdash;</span>
+        <p class="text">Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
       </div>
-      <img class="advantage__photo  advantage__photo--left" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост дьявола">
+      <picture class="advantage__photo-container  advantage__photo-container--left">
+        <img class="advantage__photo" src="img/photo-bridge@1x.jpg" width="320" height="260" alt="Мост дьявола">
+      </picture>
     </div>
-    <div class="advantage  advantage--gray">
-      <h2 class="title">Небольшая площадь</h2>
-      <span class="advantage__text">&mdash;&nbsp;&#8470;&nbsp;3&nbsp;&mdash;</span>
-      <p class="advantage__text">Все достопримечательности находятся очень близко</p>
-    </div>
-    <div class="advantage  advantage--gray">
-      <h2 class="title">Красивая дорога</h2>
-      <span class="advantage__text">&mdash;&nbsp;&#8470;&nbsp;4&nbsp;&mdash;</span>
-      <p class="advantage__text">Ехать в&nbsp;седону из&nbsp;Лас-вегаса совсем не&nbsp;скучно!</p>
-    </div>
-    <div class="advantage  advantage--gray">
-      <h2 class="title">Мало туристов</h2>
-      <span class="advantage__text">&mdash;&nbsp;&#8470;&nbsp;5&nbsp;&mdash;</span>
-      <p class="advantage__text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+    <div class="advantage__flex-wrapper">
+      <div class="advantage  advantage--gray">
+        <h2 class="title">Небольшая площадь</h2>
+        <span class="text">&mdash;&nbsp;&#8470;&nbsp;3&nbsp;&mdash;</span>
+        <p class="text">Все достопримечательности находятся очень близко</p>
+      </div>
+      <div class="advantage  advantage--gray">
+        <h2 class="title">Красивая дорога</h2>
+        <span class="text">&mdash;&nbsp;&#8470;&nbsp;4&nbsp;&mdash;</span>
+        <p class="text">Ехать в&nbsp;седону из&nbsp;Лас-вегаса совсем не&nbsp;скучно!</p>
+      </div>
+      <div class="advantage  advantage--gray">
+        <h2 class="title">Мало туристов</h2>
+        <span class="text">&mdash;&nbsp;&#8470;&nbsp;5&nbsp;&mdash;</span>
+        <p class="text">Большинство едет в&nbsp;Гранд Каньон и&nbsp;толпится там</p>
+      </div>
     </div>
   </section>
   <section class="search-request">
@@ -78,7 +84,9 @@
     <p class="text">Укажите предполагаемые даты поездки и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
     <a class="button" href="#">Найти гостиницу</a>
   </section>
-  <div class="map"></div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2815145.2498483243!2d-111.70167984010399!3d34.97347525667991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1476251290671" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  </div>
 </main>
 <footer class="page-footer">
   <div class="page-footer__hashtag">#visitsedona</div>
