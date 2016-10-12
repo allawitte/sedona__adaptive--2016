@@ -13,7 +13,7 @@
   }
 
   &--success {
-    margin-top: 162px;
+    margin-top: -162px;
   }
 }
 
@@ -43,8 +43,8 @@
     }
 
     &--success {
-      width: 84.375%; /* 100% - 7.8125%*2 = 84.375%*/
-      margin-left: -42.1875%;
+      width: 640px;
+      margin-left: -320px;
     }
   }
 
@@ -54,15 +54,5 @@
 
   .popup--error .button {
     width: 272px;
-  }
-}
-
-@media (min-width: $desktop-min-width) {
-  .popup {
-
-    &--success {
-      width: 640px;
-      margin-left: -320px;
-    }
   }
 }
