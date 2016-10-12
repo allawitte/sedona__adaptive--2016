@@ -11,22 +11,22 @@
     @include container;
     position: relative;
     padding-top: 16px;
-    padding-left: 70px;
+    padding-left: 21.875%; /* 70/320 = 21.875% */
     text-align: left;
   }
 
   &--housing {
-    background: url("../img/icon-house.svg") no-repeat 21px 0;
+    background: url("../img/icon-house.svg") no-repeat 6.5625% 20px; /* 21/320 = 6.5625% */
     background-size: 39px 37px;
   }
 
   &--souvenirs {
-    background: url("../img/icon-gift.svg") no-repeat 25px 0;
+    background: url("../img/icon-gift.svg") no-repeat 7.8125% 20px; /* 25/320 = 7.8125% */
     background-size: 32px 38px;
   }
 
   &--food {
-    background: url("../img/icon-burger.svg") no-repeat 20px 0;
+    background: url("../img/icon-burger.svg") no-repeat 6.25% 20px; /* 20/320 = 6.25% */
     background-size: 40px 35px;
   }
 }
@@ -49,8 +49,7 @@
   color: $text-light-color;
 }
 
-.advantage__text {
-  font-size: 14px;
+.advantage .text {
   text-transform: uppercase;
 }
 

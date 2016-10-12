@@ -38,12 +38,12 @@
       </div>
       <div class="review__section">
         <h2 class="title">Контактная информация:</h2>
-        <div class="review__contact-container">
+        <div class="review__contact-container  review__contact-container--phone">
           <label class="review__label" for="phone-number">Контактный телефон:</label>
           <input id="phone-number" type="tel" placeholder="Введите телефон">
           <p class="review__error-message">Ошибка, перепроверьте номер</p>
         </div>
-        <div class="review__contact-container">
+        <div class="review__contact-container  review__contact-container--email">
           <label class="review__label" for="email">Электронная почта:</label>
           <input id="email" type="email" placeholder="Введите e-mail">
           <p class="review__error-message">Ошибка, перепроверьте e-mail</p>
@@ -51,29 +51,30 @@
       </div>
       <div class="review__section">
         <h2 class="title">Ваше общее впечатление:</h2>
-        <label class="review__label  review__label--radio" for="positive">Скорее положительное</label>
         <input id="positive" type="radio" name="impression" checked>
-        <label class="review__label  review__label--radio" for="negative">Скорее отрицательное</label>
+        <label class="review__label  review__label--radio" for="positive">Скорее положительное</label>
         <input id="negative" type="radio" name="impression">
-        <label class="review__label  review__label--radio" for="hard-to-answer">Затрудняюсь ответить</label>
+        <label class="review__label  review__label--radio" for="negative">Скорее отрицательное</label>
         <input id="hard-to-answer" type="radio" name="impression">
+        <label class="review__label  review__label--radio" for="hard-to-answer">Затрудняюсь ответить</label>
       </div>
       <div class="review__section">
         <h2 class="title">Посещенные достопримечательности:</h2>
-        <label class="review__label  review__label--checkbox" for="devils-bridge">Мост Дьявола</label>
         <input id="devils-bridge" type="checkbox" name="devils-bridge" checked>
-        <label class="review__label  review__label--checkbox" for="slide-park">Слайд-парк</label>
+        <label class="review__label  review__label--checkbox" for="devils-bridge">Мост Дьявола</label>
         <input id="slide-park" type="checkbox" name="slide-park" checked>
-        <label class="review__label  review__label--checkbox" for="mountain-bell">Гора-Колокол</label>
+        <label class="review__label  review__label--checkbox" for="slide-park">Слайд-парк</label>
         <input id="mountain-bell" type="checkbox" name="mountain-bell">
-        <label class="review__label  review__label--checkbox" for="red-rocks">Красные скалы</label>
+        <label class="review__label  review__label--checkbox" for="mountain-bell">Гора-Колокол</label>
         <input id="red-rocks" type="checkbox" name="red-rocks" checked>
+        <label class="review__label  review__label--checkbox" for="red-rocks">Красные скалы</label>
       </div>
       <div class="review__section">
         <h2 class="title">Опишите свои эмоции:</h2>
         <textarea class="review__textarea" id="emotions" name="emotions" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
       </div>
       <button class="button" type="submit">Отправить отзыв</button>
+      <p class="text  text--required">* &mdash; обязательные поля</p>
     </form>
   </div>
 </main>
@@ -89,5 +90,21 @@
     <a class="page-footer__copyright-link" href="https://htmlacademy.ru">HTML Academy</a>
   </p>
 </footer>
+<div class="popup  popup--error">
+  <div class="popup__text-wrapper">
+    <p class="title">Что-то пошло не&nbsp;так!</p>
+    <p class="text">Проверьте поля, выделенные красным, скорее всего вы&nbsp;забыли их&nbsp;заполнить</p>
+  </div>
+  <button class="button" type="button">Ok</button>
+</div>
+<div class="popup  popup--success">
+  <div class="popup__text-wrapper">
+    <p class="title">Ваш отзыв отправлен!</p>
+    <p class="text">Спасибо за&nbsp;ваше участие, ваш отзыв уже поступил к&nbsp;нам. В&nbsp;ближайшее время мы&nbsp;опубликуем его на&nbsp;сайте.</p>
+  </div>
+  <div class="popup__button-wrapper">
+    <button class="button" type="button">Закрыть окно</button>
+  </div>
+</div>
 </body>
 </html>

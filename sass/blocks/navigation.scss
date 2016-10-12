@@ -53,10 +53,13 @@
   cursor: pointer;
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-min-width) {
   .navigation__list {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    font-size: $base-font-size;
+    line-height: 26px;
   }
 
   .navigation__item {
@@ -74,10 +77,12 @@
     box-shadow: none;
 
     &:hover {
+      background-color: $bg-light-color;
       color: $text-blue-color;
     }
 
     &:active {
+      background-color: $bg-light-color;
       color: $bg-dark-color;
       opacity: 0.3;
     }

@@ -14,7 +14,7 @@
 
 }
 
-.photo__description {
+.photo__description-wrapper {
   padding-top: 16px;
   padding-bottom: 16px;
   text-align: left;
@@ -65,6 +65,7 @@
   .photo {
     padding-left: 0;
     padding-right: 0;
+    padding-top: 0;
     border: none;
 
     &:first-child {
@@ -77,18 +78,16 @@
     }
   }
 
-  .photo__description {
+  .photo__description-wrapper {
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
-
+    justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     background-color: $bg-dark-gray-color;
   }
 
-  .photo__name,
-  .photo__author {
+  .photo__description {
     width: calc(100% - 100px);
   }
 
@@ -97,12 +96,18 @@
   }
 
   .photo__rating {
-    padding-top: 0;
-    width: 100px;
+    align-self: center;
+    padding-top: 2px;
+    padding-left: 32px;
+    width: 63px;
     order: 1;
+
+    &::before {
+      top: 0;
+    }
   }
 
-  .photo:nth-child(2n+3) .photo__description {
+  .photo:nth-child(2n+3) .photo__description-wrapper {
     background-color: #eaeaea;
   }
 }
@@ -110,22 +115,21 @@
 @media (min-width: $desktop-min-width) {
   .photo {
     position: relative;
-    padding-top: 0;
 
     &:nth-child(n+2) {
       width: 33.33333%;
     }
   }
 
-  .photo__description {
+  .photo__description-wrapper {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
   }
 
-  .photo__description,
-  .photo:nth-child(2n+3) .photo__description {
+  .photo__description-wrapper,
+  .photo:nth-child(2n+3) .photo__description-wrapper {
     background-color: rgba(0, 0, 0, 0.3);
   }
 

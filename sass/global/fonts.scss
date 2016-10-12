@@ -29,8 +29,29 @@
   margin: 0;
   padding-top: 6px;
   padding-bottom: 27px;
+  font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
+
+  &--required {
+    text-align: right;
+    display: none;
+  }
+
+  &--bg-triangle {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      bottom: -37px;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 37px;
+      background: url("../img/bg-triangle.svg") no-repeat 50% 100%;
+      background-size: cover;
+    }
+  }
 }
 
 .advantages {
@@ -43,5 +64,22 @@
     display: flex;
     flex-wrap: wrap;
     text-align: left;
+  }
+
+  .text {
+
+    &--required {
+      display: inline-block;
+      width: 50%;
+      padding-top: 19px;
+      padding-bottom: 14px;
+    }
+
+    &--bg-triangle {
+
+      &::after {
+        display: none;
+      }
+    }
   }
 }
