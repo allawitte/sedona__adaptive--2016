@@ -47,18 +47,13 @@
   font-weight: 700;
   color: $text-dark-color;
   text-decoration: none;
+}
 
-  &::before {
-    position: absolute;
-    top: 6px;
-    left: 0;
-    content: "";
-    display: inline-block;
-    vertical-align: top;
-    width: 22px;
-    height: 22px;
-    background: url("../img/icon-like.svg") no-repeat 0 0;
-  }
+.photo__icon-like {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  fill: $text-dark-color;
 }
 
 @media (min-width: $tablet-min-width) {
@@ -101,10 +96,10 @@
     padding-left: 32px;
     width: 63px;
     order: 1;
+  }
 
-    &::before {
-      top: 0;
-    }
+  .photo__icon-like {
+    top: 0;
   }
 
   .photo:nth-child(2n+3) .photo__description-wrapper {
@@ -137,5 +132,9 @@
   .photo__author,
   .photo__rating {
     color: $text-light-color;
+  }
+
+  .photo__icon-like {
+    fill: $text-light-color;
   }
 }

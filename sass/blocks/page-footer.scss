@@ -29,7 +29,18 @@
   width: 27px;
   height: 34px;
   font-size: 0;
-  background: $text-light-color url("../img/logo-htmlacademy.svg") no-repeat 50% 50%;
+}
+
+.page-footer__copyright-logo {
+  fill: $text-dark-color;
+}
+
+.page-footer__copyright-logo:hover {
+  fill: $bg-blue-color;
+}
+
+.page-footer__copyright-logo:active {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: $tablet-min-width) {
