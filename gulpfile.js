@@ -73,6 +73,26 @@ gulp.task("copy", function() {
   .pipe(gulp.dest("build"));
 });
 
+gulp.task("copyscripts", function() {
+  del("build/js");
+  return gulp.src([
+    "js/**"
+  ], {
+    base: "."
+  })
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("copyhtml", function() {
+  del("build/*.html");
+  return gulp.src([
+    "*.html"
+  ], {
+    base: "."
+  })
+    .pipe(gulp.dest("build"));
+});
+
 gulp.task("serve", function() {
   server.init({
     server: "build",
@@ -81,8 +101,11 @@ gulp.task("serve", function() {
     ui: false
   });
 
+  gulp.watch("js/**/*.js", ["copyscripts"]);
+  gulp.watch("build/js/**/*.js").on("change", server.reload);
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["copyhtml"]);
+  gulp.watch("build/*.html").on("change", server.reload);
 });
 
 gulp.task("build", function(fn) {
