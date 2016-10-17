@@ -14,6 +14,7 @@ var svgmin = require("gulp-svgmin");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 var del = require("del");
+var uglify = require("gulp-uglify");
 
 gulp.task("style", function() {
   gulp.src("sass/style.scss")
@@ -80,6 +81,8 @@ gulp.task("copyscripts", function() {
   ], {
     base: "."
   })
+    .pipe(uglify())
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build"));
 });
 
