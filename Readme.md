@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Александр Юдин](https://up.htmlacademy.ru/adaptive/8/user/103487).
+* Студент: [Алла Климова](https://github.com/allawitte).
 * Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
 
 ---
@@ -52,3 +52,13 @@ git clone SSH-адрес_вашего_форка
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/103487-sedona
 [dependency-image]: https://david-dm.org/htmlacademy-adaptive/103487-sedona.svg?style=flat-square
 [dependency-url]: https://david-dm.org/htmlacademy-adaptive/103487-sedona
+
+#### 5. Как работать с ssh ключем на Github
+
+---
+1.  Скопировать открытый ключ id_rsa.pub из папки C:\Users\UserName\.ssh в Settings вашего репозитория SSH and GPG keys (New SSH key)
+
+2. Затем в папке .ssh запустить консольную команду  $ ssh -T git@github.com
+И на вопрос ответить "yes"
+
+Все после этого заработает
